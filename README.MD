@@ -5,3 +5,4 @@ Getting a hang of the blockchain technology by implementing one.
 |------------|-----------------|
 | Express      | Server/Routing|
 |--------------|---------------|
+| Typescript   | OOP           |

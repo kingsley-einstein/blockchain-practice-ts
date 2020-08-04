@@ -3,3 +3,5 @@ export interface Transaction {
  receiver: string;
  amount: number;
 }
+
+export type Transactions = Array<Transaction>;
