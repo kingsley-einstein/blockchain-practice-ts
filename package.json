@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "if -d ./js-build; then rm -rf js-build; fi",
+    "build": "tsc -p .",
+    "clean:build": "npm run clean && npm run build",
+    "start": "npm run clean:build && node js-build/index"
   },
   "repository": {
     "type": "git",

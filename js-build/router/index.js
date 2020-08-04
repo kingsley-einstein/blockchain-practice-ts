@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var express_1 = require("express");
+var controller_1 = require("../controller");
+var router = express_1.Router();
+router.get("/generateId", controller_1.MainController.generateUserId);
+router.post("/create/block", controller_1.MainController.createBlock);
+router.get("/block/:id", controller_1.MainController.findBlockById);
+router.get("/blocks", controller_1.MainController.getBlocks);
+exports["default"] = router;
